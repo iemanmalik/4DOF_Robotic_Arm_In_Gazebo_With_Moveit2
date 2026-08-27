@@ -136,3 +136,7 @@ The tf system in ROS 2 keeps track of multiple coordinate frames and maintains t
 
 
 The ROS 2 Graph​ is a network of ROS 2 elements processing data together at the same time. It encompasses all executables in nodes and the connections between them.
+
+# Authors:
+Original CAD geometry: adapted from an externally available robotic-arm model.
+ROS 2 simulation, Gazebo Harmonic integration, ros2_control configuration, MoveIt 2 integration, controller configuration, kinematics implementation, and testing: developed and maintained by Maham Ieman Malik.

@@ -24,8 +24,12 @@ def generate_launch_description():
             "arduinobot.urdf.xacro"
             )
         )
-        .robot_description_semantic(file_path="config/arduinobot.srdf")
+                .robot_description_semantic(file_path="config/arduinobot.srdf")
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
+        .planning_pipelines(
+            pipelines=["ompl"],
+            default_planning_pipeline="ompl",
+        )
         .to_moveit_configs()
     )
 
